@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECODIFICADOR</title>
+    
+    <!--Fontes Usadas-->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Logo Decode-->
+    <header>
+
+        <h1 class="logo-decoder">DECODIFICADOR</h1>
+
+    </header>
+
+    <!--Áreas de texto e Botões-->
+    <main>
+        <form>
+            <!--Entrada e Saida de Texto  e Alerta de Palavras Aceitas-->
+            <fieldset>
+
+                <div class="textos">
+
+                    <label for="texto-area"></label>
+                    <textarea name="texto-area" id="texto-area" placeholder="Digite aqui palavra ou texto..." required></textarea>
+
+                    <label for="texto-convertido"></label>
+                    <textarea name="texto-convertido" id="texto-convertido" placeholder="Nenhuma mensagem encontrada!" disabled></textarea>
+                    
+                    <p class="alerta"> ATENÇÃO: Apenas letras minúsculas e sem acento!</p>
+                    
+                </div>
+                
+
+            </fieldset>
+
+                <!--Botões-->
+                <div class="botoes">
+
+                    <input type="button" value="Criptografar" class="botao-criptografar">
+
+                    <input type="button" value="Descriptografar" class="botao-descriptografar">
+
+                    <input type="button" value="Copiar" class="botao-copiar">
+
+                </div>
+
+                <!-- Mensagem de Texto Copiado-->
+                <span id="mensagem-copiado"></span>
+        </form>
+
+    </main>
+
+    <!--Creditos no Rodapé-->
+    <footer>
+
+        <p class="creditos">Pedro Italo - Alura</p>
+
+    </footer>
+
+    <!--Acesso JavaScript-->
+    <script src="js/index.js"></script>
+
+</body>
+</html>
